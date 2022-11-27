@@ -1,0 +1,25 @@
+{
+  "version": 1,
+  "canisters": {
+    "rust_ic_backend": {
+      "type": "rust",
+      "package": "rust_ic_backend",
+      "candid": "src/rust_ic_backend/rust_ic_backend.did"
+    },
+    "rust_ic_frontend": {
+      "type": "assets",
+      "source": [
+        "src/rust_ic_frontend/assets"
+      ],
+      "dependencies": [
+        "rust_ic_backend"
+      ]
+    }
+  },
+  "defaults": {
+    "build": {
+      "packtool": "",
+      "args": ""
+    }
+  }
+}
